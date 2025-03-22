@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakingan's Outfit</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .landing-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('fashion-background.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #ff4081;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e6005c;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const btn = document.getElementById("explore-btn");
+            btn.addEventListener("click", function() {
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="landing-container">
+        <h1>Welcome to Pakingan's Outfit</h1>
+        <p>Explore the latest fashion trends and styling tips</p>
+        <button id="explore-btn" class="btn">Explore Now</button>
+    </div>
+</body>
+</html>
